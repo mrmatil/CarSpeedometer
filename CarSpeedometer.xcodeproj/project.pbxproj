@@ -11,6 +11,14 @@
 		230BB59C29BE8BEA007C4AFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BB59B29BE8BEA007C4AFD /* ContentView.swift */; };
 		230BB59E29BE8BEA007C4AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230BB59D29BE8BEA007C4AFD /* Assets.xcassets */; };
 		230BB5A129BE8BEA007C4AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230BB5A029BE8BEA007C4AFD /* Preview Assets.xcassets */; };
+		23BC4C5C29C25E8A002BEAF7 /* SpeedometerCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C5B29C25E8A002BEAF7 /* SpeedometerCoordinatorView.swift */; };
+		23BC4C5E29C25EA6002BEAF7 /* SpeedometerCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C5D29C25EA6002BEAF7 /* SpeedometerCoordinatorObject.swift */; };
+		23BC4C6129C25F10002BEAF7 /* BaseCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C6029C25F10002BEAF7 /* BaseCoordinatorView.swift */; };
+		23BC4C6329C25F4E002BEAF7 /* BaseCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C6229C25F4E002BEAF7 /* BaseCoordinatorObject.swift */; };
+		23BC4C6629C26180002BEAF7 /* SpeedometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C6529C26180002BEAF7 /* SpeedometerView.swift */; };
+		23BC4C6829C2618D002BEAF7 /* SpeedometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C6729C2618D002BEAF7 /* SpeedometerViewModel.swift */; };
+		23BC4C6A29C26211002BEAF7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C6929C26211002BEAF7 /* BaseViewModel.swift */; };
+		23BC4C6C29C2621D002BEAF7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC4C6B29C2621D002BEAF7 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		230BB59B29BE8BEA007C4AFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		230BB59D29BE8BEA007C4AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		230BB5A029BE8BEA007C4AFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23BC4C5B29C25E8A002BEAF7 /* SpeedometerCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerCoordinatorView.swift; sourceTree = "<group>"; };
+		23BC4C5D29C25EA6002BEAF7 /* SpeedometerCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerCoordinatorObject.swift; sourceTree = "<group>"; };
+		23BC4C6029C25F10002BEAF7 /* BaseCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorView.swift; sourceTree = "<group>"; };
+		23BC4C6229C25F4E002BEAF7 /* BaseCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorObject.swift; sourceTree = "<group>"; };
+		23BC4C6529C26180002BEAF7 /* SpeedometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerView.swift; sourceTree = "<group>"; };
+		23BC4C6729C2618D002BEAF7 /* SpeedometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerViewModel.swift; sourceTree = "<group>"; };
+		23BC4C6929C26211002BEAF7 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		23BC4C6B29C2621D002BEAF7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +67,9 @@
 		230BB59829BE8BEA007C4AFD /* CarSpeedometer */ = {
 			isa = PBXGroup;
 			children = (
-				230BB59929BE8BEA007C4AFD /* CarSpeedometerApp.swift */,
+				23BC4C5929C25E1D002BEAF7 /* Application */,
+				23BC4C5F29C25F00002BEAF7 /* Base */,
+				23BC4C5729C25E08002BEAF7 /* Modules */,
 				230BB59B29BE8BEA007C4AFD /* ContentView.swift */,
 				230BB59D29BE8BEA007C4AFD /* Assets.xcassets */,
 				230BB59F29BE8BEA007C4AFD /* Preview Content */,
@@ -65,6 +83,60 @@
 				230BB5A029BE8BEA007C4AFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23BC4C5729C25E08002BEAF7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				23BC4C5829C25E13002BEAF7 /* SpeedometerView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		23BC4C5829C25E13002BEAF7 /* SpeedometerView */ = {
+			isa = PBXGroup;
+			children = (
+				23BC4C5A29C25E77002BEAF7 /* Coordinators */,
+				23BC4C6429C2616C002BEAF7 /* Views */,
+			);
+			path = SpeedometerView;
+			sourceTree = "<group>";
+		};
+		23BC4C5929C25E1D002BEAF7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				230BB59929BE8BEA007C4AFD /* CarSpeedometerApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		23BC4C5A29C25E77002BEAF7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				23BC4C5B29C25E8A002BEAF7 /* SpeedometerCoordinatorView.swift */,
+				23BC4C5D29C25EA6002BEAF7 /* SpeedometerCoordinatorObject.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		23BC4C5F29C25F00002BEAF7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				23BC4C6029C25F10002BEAF7 /* BaseCoordinatorView.swift */,
+				23BC4C6229C25F4E002BEAF7 /* BaseCoordinatorObject.swift */,
+				23BC4C6B29C2621D002BEAF7 /* BaseView.swift */,
+				23BC4C6929C26211002BEAF7 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		23BC4C6429C2616C002BEAF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23BC4C6529C26180002BEAF7 /* SpeedometerView.swift */,
+				23BC4C6729C2618D002BEAF7 /* SpeedometerViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				230BB59C29BE8BEA007C4AFD /* ContentView.swift in Sources */,
+				23BC4C5E29C25EA6002BEAF7 /* SpeedometerCoordinatorObject.swift in Sources */,
+				23BC4C6329C25F4E002BEAF7 /* BaseCoordinatorObject.swift in Sources */,
+				23BC4C6629C26180002BEAF7 /* SpeedometerView.swift in Sources */,
+				23BC4C6129C25F10002BEAF7 /* BaseCoordinatorView.swift in Sources */,
+				23BC4C6A29C26211002BEAF7 /* BaseViewModel.swift in Sources */,
+				23BC4C5C29C25E8A002BEAF7 /* SpeedometerCoordinatorView.swift in Sources */,
+				23BC4C6C29C2621D002BEAF7 /* BaseView.swift in Sources */,
+				23BC4C6829C2618D002BEAF7 /* SpeedometerViewModel.swift in Sources */,
 				230BB59A29BE8BEA007C4AFD /* CarSpeedometerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
